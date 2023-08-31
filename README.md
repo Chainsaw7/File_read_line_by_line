@@ -4,17 +4,17 @@ As of Visual Studio 2022 version 17.6, visual studio has the vcpkg package inclu
 Let's see how to install the vcpkg manager. ( A short install path like: C:\src\vcpkg or C:\dev\vcpkg is recommended, since otherwise you may run into path issues for some port build systems.)
 
 Step 1: Clone the vcpkg repo in the desired directory.
-clone git https://github.com/microsoft/vcpkg.git
+  clone git https://github.com/microsoft/vcpkg.git
 
 Step 2: Run the bootstrap script to build vcpkg
-.\bootstrap-vcpkg.bat
+  .\bootstrap-vcpkg.bat
 
 Step 3 (optional): Make the vpckg libraries available to visual studio. 
-.\vcpkg integrate install
+  .\vcpkg integrate install
 
 You can search for a particular library with the vcpkg manager and then install it. Here we want boost, so:
-.\vcpkg search boost
-.\vcpkg install boost
+   .\vcpkg search boost
+    .\vcpkg install boost
 
 An input file is also uploaded in the repository, so the code can be tested.
 
